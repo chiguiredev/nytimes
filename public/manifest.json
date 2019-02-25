@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "NYsurfer",
+  "name": "New York Timer Surfer",
   "icons": [
     {
       "src": "favicon.ico",
