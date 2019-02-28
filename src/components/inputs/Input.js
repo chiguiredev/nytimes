@@ -7,7 +7,8 @@ const Input = React.forwardRef(({
   required=false,
   onFocus,
   onBlur,
-  onChange
+  onChange,
+  onKeyDown,
 }, ref) =>{
   const [isValid, setIsValid] = useState(true);
 
@@ -21,6 +22,7 @@ const Input = React.forwardRef(({
         onFocus={onFocus}
         onBlur={onBlur}
         onChange={onChange}
+        onKeyDown={onKeyDown}
         ref={ref}
       />
       <label>{ labelText }</label>

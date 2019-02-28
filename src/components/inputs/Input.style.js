@@ -4,18 +4,16 @@ import { fontSizes } from '../../utils/fonts';
 
 const StyledInput = styled.div`
   position:relative; 
-  margin: 10px;
   margin-top: 35px;
-  min-width: 100px;
-  max-width: 435px;
+  width: 270px;
 
   input{
-    font-size: ${fontSizes.title}
+    font-size: ${fontSizes.title};
     padding: 10px 10px 10px 5px;
     display: block;
+    width: 83%;
     border: none;
-    width: 100%;
-    border-bottom: 2px solid ${props => props.isValid ? baseColors.pink : baseColors.error };
+    border-bottom: 2px solid ${baseColors.pink};
     background-color: ${baseColors.darkblue};
     color: ${baseColors.white};
     ${transitions.defaultTransition};
