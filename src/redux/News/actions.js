@@ -14,5 +14,10 @@ const actions = {
     propety: propety,
     value: value,
   }),
+  FETCH_MORE_NEWS: 'FETCH_MORE_NEWS;',
+  fetch_more_news: (url) => ({
+    type: actions.FETCH_MORE_NEWS,
+    url: url,
+  })
 };
 export default actions;

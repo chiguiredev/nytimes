@@ -83,6 +83,9 @@ export const StyledNewsFeed = styled.div`
     img {
       width: 143px;
       margin-right: 15px;
+      @media only screen and (max-width: 650px) {
+        display: none;
+      }
     }
   }
 `;
