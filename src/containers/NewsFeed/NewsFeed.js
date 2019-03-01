@@ -64,7 +64,7 @@ const NewsList = ({ news }) => {
               <img src={`http://static01.nyt.com/${element.multimedia[0].url}`} alt="" />
             }
             <div className='news-content' key={`${index}${element.headline.main}`}>
-              <a target='_blank' href={element.web_url} className='headline'>
+              <a target='_blank' rel="noopener noreferrer" href={element.web_url} className='headline'>
                 {element.headline.main}
               </a>
               <p className='snippet'>
