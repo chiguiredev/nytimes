@@ -1,3 +1,7 @@
+install the dependencies
+
+### `yarn install`
+
 use this command to run the project
 
 ### `yarn start`
