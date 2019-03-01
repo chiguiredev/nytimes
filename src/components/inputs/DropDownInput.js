@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import Input from './Input';
 import { StyledList, StyledDropdown, StyledError } from './DropDownInput.style';
+import { typesOfMaterials } from '../../resources/constants/typesOfMaterials';
 
-const DropDownInput = ({ inputType, labelText, required }) => {
+const DropDownInput = ({
+  inputType,
+  labelText,
+  required,
+  update_news_form_value,
+}) => {
 
-  const listElements = ['hola','hoja','hopo','soy','el','ella','ello'];
+  const listElements = typesOfMaterials;
   const [isListVisible, setIsListVisible] = useState(false);
   const [list, setList] = useState(listElements);
   const inputRef = React.createRef();
@@ -46,6 +52,7 @@ const DropDownInput = ({ inputType, labelText, required }) => {
         isVisible={isListVisible}
         inputRef={inputRef}
         setVisible={setIsListVisible}
+        update_news_form_value={update_news_form_value}
       />
     </StyledDropdown>
   );
@@ -55,12 +62,18 @@ export default DropDownInput;
 
 // This component displays the list of options from the dropdown
 // Elements on this list must be strings
-const List = ({ listElements, isVisible, inputRef }) => {
+const List = ({
+  listElements,
+  isVisible,
+  inputRef,
+  update_news_form_value
+}) => {
 
   // takes the reference of the input above the List component and
   // sets its value to the clicked element in the list
   const handleListElmentSelection = (e) => {
     inputRef.current.value = e.target.dataset.value;
+    update_news_form_value('material', e.target.dataset.value);
     inputRef.current.blur();
   };
 

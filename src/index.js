@@ -6,8 +6,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { configureStore, history } from './redux/store';
+import rootSaga from './redux/rootSaga';
 
-const store = configureStore();
+const { store, sagaMiddleware } = configureStore();
+sagaMiddleware.run(rootSaga);
 
 const Root = () => {
   return (

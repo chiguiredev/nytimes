@@ -8,17 +8,20 @@ import { createRootReducer } from './reducers';
 export const history = createBrowserHistory();
 
 export const configureStore = (preloadedState) => {
+  const sagaMiddleware = createSagaMiddleware();
   const store = createStore(
     createRootReducer(history),
     preloadedState,
     compose(
       applyMiddleware(
         routerMiddleware(history),
-        createSagaMiddleware(),
+        sagaMiddleware,
       ),
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   );
-
-  return store;
+  return {
+    store, 
+    sagaMiddleware
+  }
 }

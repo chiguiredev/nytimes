@@ -24,7 +24,7 @@ const App = ({ history }) => {
           integrity="sha384-xl26xwG2NVtJDw2/96Lmg09++ZjrXPc89j0j7JHjLOdSwHDHPHiucUjfllW0Ywrq"
           crossorigin="anonymous">
         </script>
-        <title>NYtimes</title>
+        <title>times</title>
       </Helmet>
       <GlobalStyle />
       <AppRouter history={history} />

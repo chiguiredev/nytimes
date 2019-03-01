@@ -9,6 +9,7 @@ const Input = React.forwardRef(({
   onBlur,
   onChange,
   onKeyDown,
+  value,
 }, ref) =>{
   const [isValid, setIsValid] = useState(true);
 
@@ -24,6 +25,7 @@ const Input = React.forwardRef(({
         onChange={onChange}
         onKeyDown={onKeyDown}
         ref={ref}
+        value={value}
       />
       <label>{ labelText }</label>
     </StyledInput>

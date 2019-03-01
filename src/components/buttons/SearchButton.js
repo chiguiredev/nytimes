@@ -1,16 +1,16 @@
 import React from 'react';
 
-import StyledButton from './Button.style';
+import { StyledSearchButton } from './SearchButton.style';
 
 const SearchButton = ({ onClick }) => {
   const onClickFallback = () => console.error('not onClick provided, for the button');
   const onClickFunction = onClick || onClickFallback;
   return (
-    <StyledButton
+    <StyledSearchButton
       onClick={onClickFunction}
     >
       <i className="fas fa-search"></i>
-    </StyledButton>
+    </StyledSearchButton>
   );
 }
 

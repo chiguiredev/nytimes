@@ -5,13 +5,13 @@ import { fontSizes } from '../../utils/fonts';
 const StyledInput = styled.div`
   position:relative; 
   margin-top: 35px;
-  width: 270px;
+  width: 280px;
 
   input{
     font-size: ${fontSizes.title};
     padding: 10px 10px 10px 5px;
     display: block;
-    width: 83%;
+    width: 90%;
     border: none;
     border-bottom: 2px solid ${baseColors.pink};
     background-color: ${baseColors.darkblue};

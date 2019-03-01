@@ -44,14 +44,6 @@ const StyledLandingFrom = styled.div`
     }
   }
 
-  .footer {
-    position: absolute;
-    height: 10px;
-    bottom: 10px;
-    width: 100vw;
-    background-color: ${baseColors.pink};
-  }
-
 `;
 
 export default StyledLandingFrom;
