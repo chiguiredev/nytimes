@@ -1,6 +1,8 @@
 This little project lets you look into ny times content,<br>
 just pick some keywords to search and the type of material you want<br>
 
+#### this is live [here](https://rafaelsalass.github.io/nytimes/)
+
 #### If you want to run this little sucker do the following:
 
 install the dependencies
