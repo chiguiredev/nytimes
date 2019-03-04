@@ -19,10 +19,12 @@ export const StyledList = styled.ul`
   box-shadow: ${commonStyles.defaultBoxShadow};
   min-width: 100px;
   max-width: 410px;
+  max-height: 200px;
   position: absolute;
   top: 90px;
   z-index: 9;
   ${({isVisible}) => isVisible? null : 'visibility: hidden;'}
+  overflow-y: scroll;
 
   li {
     font-size: ${fontSizes.bigLabel};
