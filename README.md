@@ -1,5 +1,5 @@
 This little project lets you look into ny times content,<br>
-just pick some keywords to search and the type of material you<br>
+just pick some keywords to search and the type of material you want<br>
 
 #### If you want to run this little sucker do the following:
 
