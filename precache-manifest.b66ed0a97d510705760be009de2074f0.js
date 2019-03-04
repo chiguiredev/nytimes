@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "889800d51514249edafc",
+    "revision": "048f2bcc1816ffb73054",
     "url": "/nytimes/static/css/main.be9cd952.chunk.css"
   },
   {
-    "revision": "889800d51514249edafc",
-    "url": "/nytimes/static/js/main.889800d5.chunk.js"
+    "revision": "048f2bcc1816ffb73054",
+    "url": "/nytimes/static/js/main.048f2bcc.chunk.js"
   },
   {
     "revision": "d6202d8d81ccb6ede550",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/nytimes/static/media/logo.ba7f1fee.svg"
   },
   {
-    "revision": "ae1566e097e630e3b7a8bc0ff158d793",
+    "revision": "68769e6a2f0bbcb3f939081d3eaafba7",
     "url": "/nytimes/index.html"
   }
 ];
