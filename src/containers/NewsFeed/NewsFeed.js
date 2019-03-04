@@ -35,7 +35,6 @@ class NewsFeed extends Component {
               labelText='Search Keywords'
               required={true}
               onBlur={this.updateValueOnStore.bind(this, 'keywords')}
-              value={this.props.keywords}
             />
             <DropDownInput
               inputType='text'
