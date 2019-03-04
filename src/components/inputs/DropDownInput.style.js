@@ -4,10 +4,13 @@ import { fontSizes } from '../../utils/fonts';
 
 export const StyledDropdown = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 export const StyledList = styled.ul`
-  margin: 0px 10px;;
+  margin: 0px 20px;;
   list-style: none;
   padding: 10px;
   background-color: ${baseColors.mediumblue};
@@ -17,6 +20,7 @@ export const StyledList = styled.ul`
   min-width: 100px;
   max-width: 410px;
   position: absolute;
+  top: 90px;
   z-index: 9;
   ${({isVisible}) => isVisible? null : 'visibility: hidden;'}
 
