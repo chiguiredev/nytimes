@@ -88,4 +88,17 @@ export const StyledNewsFeed = styled.div`
       }
     }
   }
+
+  .current-query {
+    display: flex;
+    flex-wrap: wrap;
+
+    h4 {
+      font-size: ${fontSizes.mediumLabel};
+      color: ${baseColors.lightpink};
+      margin: 0 2px;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+  }
 `;

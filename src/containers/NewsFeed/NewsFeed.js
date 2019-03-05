@@ -5,6 +5,7 @@ import { StyledNewsFeed } from './NewsFeed.style';
 import Input from '../../components/inputs/Input';
 import DropDownInput from '../../components/inputs/DropDownInput';
 import SearchButton from '../../components/buttons/SearchButton';
+import Tagbar from '../../components/tagbar/Tagbar';
 import Logo from '../../resources/img/logo.svg';
 import actions from '../../redux/News/actions';
 import { SEARCH_ARTICLE } from '../../api/endpoints';
@@ -45,19 +46,27 @@ class NewsFeed extends Component {
             <SearchButton onClick={this.handleSearchButton} />
           </div>
         </div>
-        <NewsList news={this.props.news} />
+        <NewsList
+          news={this.props.news}
+          keywords={this.props.keywords}
+          material={this.props.material}
+        />
       </StyledNewsFeed>
     );
   }
 }
 
-const NewsList = ({ news }) => {
+const NewsList = ({ news, keywords, material }) => {
   return (
     <div className='news-feed'>
+      <div className='current-query'>
+        <h4>{`Keywords: ${keywords}`}</h4>
+        <h4>{`Type of material: ${material}`}</h4>
+      </div>
     {
       news.map((element, index) => {
         return (
-          <div className='news-feed-row'>
+          <div className='news-feed-row' key={`${index}${element.headline.main}`}>
             {
               element.multimedia[0] &&
               <img src={`http://static01.nyt.com/${element.multimedia[0].url}`} alt="" />
@@ -75,6 +84,7 @@ const NewsList = ({ news }) => {
               <h4>
                 {`Published: ${element.pub_date}`}
               </h4>
+              <Tagbar keywords={element.keywords} />
             </div>
           </div>
         );

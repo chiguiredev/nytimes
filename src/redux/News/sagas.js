@@ -15,12 +15,6 @@ export function* watchRequestNews() {
 
       yield put(push('/feed'));
 
-      yield put({
-        type: actions.UPDATE_VALUE,
-        propety: 'material',
-        value: null
-      });
-
     } catch (err) {
       console.error(err);
       yield put({ type: actions.FETCH_NEWS_ERROR });
