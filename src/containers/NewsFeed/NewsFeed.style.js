@@ -42,6 +42,7 @@ export const StyledNewsFeed = styled.div`
 
   .news-feed {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;

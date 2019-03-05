@@ -29,7 +29,7 @@ class NewsFeed extends Component {
     return (
       <StyledNewsFeed>
         <div className="head">
-          <img className='ny-logo' src={Logo} alt='NY times logo' />
+          <img id='ny-logo' className='ny-logo' src={Logo} alt='NY times logo' />
           <div className='form'>
             <Input
               inputType='text'
