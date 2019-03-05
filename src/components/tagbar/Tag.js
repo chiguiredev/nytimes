@@ -2,10 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import { fontSizes } from '../../utils/fonts';
 import { baseColors, commonStyles, transitions } from '../../utils/theme';
+import { SEARCH_ARTICLE } from '../../api/endpoints';
 
-const Tag = ({keyword}) =>{
+const Tag = ({keyword, material, fetch_news, update_news_form_value}) =>{
+
+  const handleTagClick = (e) =>{
+    update_news_form_value('keywords', e.target.dataset.keyword);
+    fetch_news(SEARCH_ARTICLE(keyword, material, 0));
+  }
+
   return (
-    <StyledSpan>{keyword}</StyledSpan>
+    <StyledSpan data-keyword={keyword} onClick={handleTagClick}>
+      {keyword}
+    </StyledSpan>
   );
 };
 

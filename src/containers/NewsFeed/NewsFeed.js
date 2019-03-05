@@ -50,13 +50,15 @@ class NewsFeed extends Component {
           news={this.props.news}
           keywords={this.props.keywords}
           material={this.props.material}
+          fetch_news={this.props.fetch_news}
+          update_news_form_value={this.props.update_news_form_value}
         />
       </StyledNewsFeed>
     );
   }
 }
 
-const NewsList = ({ news, keywords, material }) => {
+const NewsList = ({ news, keywords, material, fetch_news, update_news_form_value }) => {
   return (
     <div className='news-feed'>
       <div className='current-query'>
@@ -84,7 +86,12 @@ const NewsList = ({ news, keywords, material }) => {
               <h4>
                 {`Published: ${element.pub_date}`}
               </h4>
-              <Tagbar keywords={element.keywords} />
+              <Tagbar
+                keywords={element.keywords}
+                material={material}
+                fetch_news={fetch_news}
+                update_news_form_value={update_news_form_value}
+              />
             </div>
           </div>
         );

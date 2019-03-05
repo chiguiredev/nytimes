@@ -32,9 +32,9 @@ export function* watchUpdateNewsFormValue() {
   });
 }
 
-
 export default function* rootSaga() {
   yield all([
     fork(watchRequestNews),
+    fork(watchUpdateNewsFormValue),
   ]);
 }
