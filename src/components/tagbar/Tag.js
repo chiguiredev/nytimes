@@ -25,6 +25,7 @@ const StyledSpan = styled.div`
   margin-right: 10px;
   margin-top: 10px;
   padding: 6px;
+  min-height: 0px;
   background-color: ${baseColors.pink};
   color: ${baseColors.darkblue};
   border-radius: ${commonStyles.defaultBorderRadius};
