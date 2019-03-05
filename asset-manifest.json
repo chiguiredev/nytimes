@@ -1,13 +1,13 @@
 {
   "main.css": "/nytimes/static/css/main.be9cd952.chunk.css",
-  "main.js": "/nytimes/static/js/main.f568dc5a.chunk.js",
-  "main.js.map": "/nytimes/static/js/main.f568dc5a.chunk.js.map",
+  "main.js": "/nytimes/static/js/main.dd8e05da.chunk.js",
+  "main.js.map": "/nytimes/static/js/main.dd8e05da.chunk.js.map",
   "runtime~main.js": "/nytimes/static/js/runtime~main.d6202d8d.js",
   "runtime~main.js.map": "/nytimes/static/js/runtime~main.d6202d8d.js.map",
-  "static/js/2.d42c0da8.chunk.js": "/nytimes/static/js/2.d42c0da8.chunk.js",
-  "static/js/2.d42c0da8.chunk.js.map": "/nytimes/static/js/2.d42c0da8.chunk.js.map",
+  "static/js/2.41816ba4.chunk.js": "/nytimes/static/js/2.41816ba4.chunk.js",
+  "static/js/2.41816ba4.chunk.js.map": "/nytimes/static/js/2.41816ba4.chunk.js.map",
   "index.html": "/nytimes/index.html",
-  "precache-manifest.27e4ec444313b5be6dea8e13289b2b48.js": "/nytimes/precache-manifest.27e4ec444313b5be6dea8e13289b2b48.js",
+  "precache-manifest.59769ba4864e557b29c8969cec2452ae.js": "/nytimes/precache-manifest.59769ba4864e557b29c8969cec2452ae.js",
   "service-worker.js": "/nytimes/service-worker.js",
   "static/css/main.be9cd952.chunk.css.map": "/nytimes/static/css/main.be9cd952.chunk.css.map",
   "static/media/logo.svg": "/nytimes/static/media/logo.ba7f1fee.svg"
