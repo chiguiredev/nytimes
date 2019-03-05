@@ -18,10 +18,8 @@ const Tag = ({keyword, material, fetch_news, update_news_form_value}) =>{
   );
 };
 
-const StyledSpan = styled.span`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+const StyledSpan = styled.div`
+  display: block;
   margin-right: 10px;
   margin-top: 10px;
   padding: 6px;
