@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nytimes/precache-manifest.2ec6305d759fe68fc48b52a92748cfc4.js"
+  "/nytimes/precache-manifest.db0bcaa42a6b3bde412786fd2c85a4d4.js"
 );
 
 workbox.clientsClaim();
