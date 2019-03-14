@@ -24,6 +24,12 @@ const App = ({ history }) => {
           integrity="sha384-xl26xwG2NVtJDw2/96Lmg09++ZjrXPc89j0j7JHjLOdSwHDHPHiucUjfllW0Ywrq"
           crossorigin="anonymous">
         </script>
+        <script
+          defer
+          src="https://use.fontawesome.com/releases/v5.7.2/js/brands.js"
+          integrity="sha384-zJ8/qgGmKwL+kr/xmGA6s1oXK63ah5/1rHuILmZ44sO2Bbq1V3p3eRTkuGcivyhD"
+          crossorigin="anonymous">
+        </script>
         <title>times</title>
       </Helmet>
       <GlobalStyle />
